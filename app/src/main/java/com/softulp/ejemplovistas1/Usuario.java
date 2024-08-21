@@ -1,11 +1,13 @@
 package com.softulp.ejemplovistas1;
 
-public class Usuario {
+import java.io.Serializable;
+
+public class Usuario implements Serializable {
     private int dni;
     private String apellido;
     private String nombre;
     private String email;
-    private String password;
+    private  String password;
 
     public Usuario(int dni, String apellido, String nombre, String email, String password) {
         this.dni = dni;
